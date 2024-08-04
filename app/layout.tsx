@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="m-auto mt-4">
+        <div className="m-auto mt-6">
           <Menu />
         </div>
         <div className="m-aut py-10">{children}</div>

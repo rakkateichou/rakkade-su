@@ -35,7 +35,7 @@ export default function Menu() {
   }, [pathname])
 
   return (
-    <div className="max-w-96 min-w-96 m-auto">
+    <nav className="w-[30rem] m-auto">
       <div className="flex justify-between py-1 px-6 relative">
         {routes.map((item) => (
           <div
@@ -43,9 +43,9 @@ export default function Menu() {
             ref={item.ref}
             onClick={() => {
               setCurrentRef(item.ref);
-              router.push(item.path);
+              router.replace(item.path);
             }}
-            className="cursor-pointer"
+            className="cursor-pointer text-2xl"
           >
             {item.name}
           </div>
@@ -57,6 +57,6 @@ export default function Menu() {
         className="bg-sakura-1 h-1 w-14 transition-all"
       />
       <div className="bg-sakura-1 h-px" />
-    </div>
+    </nav>
   );
 }
