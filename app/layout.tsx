@@ -25,7 +25,7 @@ export default function RootLayout({
           <Menu />
         </div>
         <div className="m-aut py-10">{children}</div>
-    </body>
+      </body>
     </html>
   );
 }

@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { RefObject, useEffect, useRef, useState } from "react";
 
-type MyRoute = {name: string, path: string, ref: RefObject<any>};
+type MyRoute = { name: string; path: string; ref: RefObject<any> };
 
 export default function Menu() {
   const router = useRouter();
@@ -14,10 +14,10 @@ export default function Menu() {
   const [selectorLeft, setSelectorLeft] = useState<number>(0);
 
   const routes: Array<MyRoute> = [
-    {name: "home", path: "/home", ref: useRef(null)},
-    {name: "works", path: "/works", ref: useRef(null)},
-    {name: "blog", path: "/blog", ref: useRef(null)},
-  ]
+    { name: "home", path: "/home", ref: useRef(null) },
+    { name: "works", path: "/works", ref: useRef(null) },
+    { name: "blog", path: "/blog", ref: useRef(null) },
+  ];
 
   const [currentRef, setCurrentRef] = useState(routes[0].ref);
 
@@ -30,13 +30,14 @@ export default function Menu() {
   }, [currentRef]);
 
   useEffect(() => {
-    let ref: RefObject<any> = routes.find((item) => item.path === pathname)?.ref ?? routes[0].ref;
+    let ref: RefObject<any> =
+      routes.find((item) => item.path === pathname)?.ref ?? routes[0].ref;
     setCurrentRef(ref);
-  }, [pathname])
+  }, [pathname]);
 
   return (
-    <nav className="w-[30rem] m-auto">
-      <div className="flex justify-between py-1 px-6 relative">
+    <nav className="m-auto w-[30rem]">
+      <div className="relative flex justify-between px-6 py-1">
         {routes.map((item) => (
           <div
             key={item.name}
@@ -54,9 +55,9 @@ export default function Menu() {
       <div
         ref={selectorRef}
         style={{ marginLeft: selectorLeft ?? 0, width: selectorWidth ?? 0 }}
-        className="bg-sakura-1 h-1 w-14 transition-all"
+        className="h-1 w-14 bg-sakura-1 transition-all"
       />
-      <div className="bg-sakura-1 h-px" />
+      <div className="h-px bg-sakura-1" />
     </nav>
   );
 }

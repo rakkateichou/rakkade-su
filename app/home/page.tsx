@@ -3,26 +3,26 @@ import Tree from "../_components/tree";
 
 export default function Home() {
   return (
-    <main className="flex flex-row pl-36 ">
+    <main className="flex flex-row pl-36">
       <div className="max-w-[43.5vh]">
-        <div className="text-5xl text-white flex justify-between">
-          <b>Ruslan{' '}</b>
+        <div className="flex justify-between text-5xl text-white">
+          <b>Ruslan </b>
           <b>Veselov</b>
         </div>
-        <div className="mt-1 flex items-center gap-2 group">
+        <div className="group mt-1 flex items-center gap-2">
           <img
             src="/github.svg"
-            className="w-[20px] h-[20px] opacity-60 transition-opacity group-hover:opacity-100"
+            className="h-[20px] w-[20px] opacity-60 transition-opacity group-hover:opacity-100"
           />
           <Link
             href="https://github.com/rakkateichou"
-            className="text-white text-opacity-60 text-[20px] underline decoration-dashed transition-opacity group-hover:text-opacity-100"
+            className="text-[20px] text-white text-opacity-60 underline decoration-dashed transition-opacity group-hover:text-opacity-100"
           >
             @rakkateichou
           </Link>
         </div>
         <section className="mt-5">
-          <article className="text-xl text-justify">
+          <article className="text-justify text-xl">
             <p>Hello,</p>
             <br />
             <p>
@@ -33,23 +33,23 @@ export default function Home() {
           </article>
         </section>
         <div className="mt-10 flex flex-col">
-          <div className="text-xl flex-grow self-center">
+          <div className="flex-grow self-center text-xl">
             <b>Areas of interest</b>
           </div>
           <div className="flex justify-between pt-6">
-            <div className="flex-col flex items-center gap-2">
+            <div className="flex flex-col items-center gap-2">
               <img
                 src="/react.svg"
-                className="w-[48px] h-[48px] hover:rotate-180 transition-transform"
+                className="h-[48px] w-[48px] transition-transform hover:rotate-180"
               />
               <span className="text-lg">Frontend</span>
             </div>
-            <div className="flex-col flex items-center gap-2">
-              <img src="/data-science.svg" className="w-[48px] h-[48px]" />
+            <div className="flex flex-col items-center gap-2">
+              <img src="/data-science.svg" className="h-[48px] w-[48px]" />
               <span className="text-lg">Data science</span>
             </div>
-            <div className="flex-col flex items-center gap-2">
-              <img src="/mobile.svg" className="w-[48px] h-[48px]" />
+            <div className="flex flex-col items-center gap-2">
+              <img src="/mobile.svg" className="h-[48px] w-[48px]" />
               <span className="text-lg">Mobile dev</span>
             </div>
           </div>
@@ -60,28 +60,28 @@ export default function Home() {
           </div>
           <div className="mt-5 flex flex-col gap-3">
             <div className="flex items-center">
-              <img src="/mail.svg" className="w-[32px] h-[32px]" />
+              <img src="/mail.svg" className="h-[32px] w-[32px]" />
               <a
                 href="mailto:me@rakkade.su"
-                className="text-xl ml-3 hover:text-sakura-3 transition-colors"
+                className="ml-3 text-xl transition-colors hover:text-sakura-3"
               >
                 me@rakkade.su
               </a>
             </div>
             <div className="flex items-center">
-              <img src="/telegram.svg" className="w-[32px] h-[32px]" />
+              <img src="/telegram.svg" className="h-[32px] w-[32px]" />
               <a
                 href="https://t.me/rakkatei"
-                className="text-xl ml-3 hover:text-sakura-3 transition-colors"
+                className="ml-3 text-xl transition-colors hover:text-sakura-3"
               >
                 @rakkatei
               </a>
             </div>
             <div className="flex items-center">
-              <img src="/linkedin.svg" className="w-[32px] h-[32px]" />
+              <img src="/linkedin.svg" className="h-[32px] w-[32px]" />
               <a
                 href="https://linkedin.com/in/ruslan-veselov/v"
-                className="text-xl ml-3 hover:text-sakura-3 transition-colors"
+                className="ml-3 text-xl transition-colors hover:text-sakura-3"
               >
                 @ruslan-veselov
               </a>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center flex-grow">
+      <div className="flex flex-grow flex-col justify-center">
         <Tree />
       </div>
     </main>
