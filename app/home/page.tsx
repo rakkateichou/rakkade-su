@@ -4,7 +4,7 @@ import Tree from "../_components/tree";
 export default function Home() {
   return (
     <main className="flex flex-row pl-36">
-      <div className="max-w-[43.5vh]">
+      <div className="slide-in-left max-w-[43.5vh]">
         <div className="flex justify-between text-5xl text-white">
           <b>Ruslan </b>
           <b>Veselov</b>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-grow flex-col justify-center">
+      <div className="flex flex-grow flex-col justify-center items-end pr-20">
         <Tree />
       </div>
     </main>
