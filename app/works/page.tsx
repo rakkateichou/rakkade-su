@@ -49,11 +49,8 @@ export default function Works() {
             }
 
             return (
-              <div
-                id={category.name}
-                className="no-scrollbar flex max-w-[100vw] scroll-p-52 overflow-x-scroll snap-x snap-proximity"
-              >
-                <div className="slide-in-left absolute z-40 -mt-1 flex h-[165px] flex-col items-center gap-3 bg-gray pl-2 pr-2 pt-1">
+              <div className="flex">
+                <div className="slide-in-left -mt-1 flex h-[165px] flex-col items-center gap-3 bg-gray pl-2 pr-2 pt-1">
                   <img
                     src={category.iconSrc}
                     className={`ml-1 h-8 w-8 ${classNameTint}`}
@@ -64,9 +61,12 @@ export default function Works() {
                     {category.name}
                   </div>
                 </div>
-                <div className="slide-in-right ml-14 mr-[17.3vw] flex gap-4 snap-x snap-mandatory">
-                  <div className="h-[160px] w-[300px] bg-sakura-2 snap-start"></div>
-                  <div className="h-[160px] w-[300px] bg-sakura-1 snap-start"></div>
+                <div
+                  id={category.name}
+                  className="no-scrollbar slide-in-right flex w-[89vw] snap-x snap-proximity snap-normal gap-4 overflow-x-scroll"
+                >
+                  <div className="h-[160px] min-w-[300px] snap-center bg-sakura-2"></div>
+                  <div className="mr-[70px] h-[160px] min-w-[300px] snap-center bg-sakura-1"></div>
                 </div>
               </div>
             );
