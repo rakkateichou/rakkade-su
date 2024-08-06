@@ -1,15 +1,27 @@
+type BlogPost = { title: string; date: string; link: string };
+
 export default function Blog() {
+  const blogPosts: Array<BlogPost> = [
+    {
+      title: "Exporting a Minecraft tree to Three.js",
+      date: "03/08/24",
+      link: "/exporting-a-minecraft-tree-to-three-js",
+    },
+  ];
+
   return (
-    <main className="slide-in-left px-6 mt-10 sm:px-72 sm:mt-10">
-      <div>
-        <div>
-        <div className="flex justify-between text-nowrap text-xl">
-          <div className="truncate w-64 sm:w-full">Exporting a Minecraft tree to Three.js</div>
-          <div className="opacity-75">03/08/24</div>
+    <main className="slide-in-left mt-10 px-6 sm:mt-10 sm:px-72">
+      {blogPosts.map((post) => (
+        <div key={post.link}>
+          <div className="flex justify-between text-nowrap text-xl">
+            <a href={post.link} className="w-64 truncate sm:w-full">
+              {post.title}
+            </a>
+            <div className="opacity-75">{post.date}</div>
+          </div>
+          <div className="mt-1 h-px bg-sakura-1" />
         </div>
-        <div className="h-px mt-1 bg-sakura-1"/>
-        </div>
-      </div>
+      ))}
     </main>
   );
 }

@@ -27,6 +27,7 @@ export default function Works() {
             return (
               <a
                 href={`#${category.name}`}
+                key={category.name}
                 className="cursor-pointer scroll-m-96 scroll-smooth"
               >
                 <img
@@ -49,7 +50,7 @@ export default function Works() {
             }
 
             return (
-              <div className="flex">
+              <div className="flex" key={category.name}>
                 <div className="slide-in-left -mt-1 flex h-[165px] flex-col items-center gap-3 bg-gray pl-2 pr-2 pt-1">
                   <img
                     src={category.iconSrc}
