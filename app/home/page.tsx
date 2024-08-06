@@ -3,7 +3,7 @@ import Tree from "../_components/tree";
 
 export default function Home() {
   return (
-    <main className="flex flex-row pl-36">
+    <main className="flex flex-row pl-36 mt-10">
       <div className="slide-in-left max-w-[43.5vh]">
         <div className="flex justify-between text-5xl text-white">
           <b>Ruslan </b>

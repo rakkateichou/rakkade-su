@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="m-auto mt-6">
+        <div className="sticky -top-[1px] pt-6 bg-gray z-50">
           <Menu />
         </div>
-        <div className="m-aut py-10">{children}</div>
+        <div className="m-auto">{children}</div>
       </body>
     </html>
   );

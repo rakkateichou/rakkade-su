@@ -36,7 +36,7 @@ export default function Menu() {
   }, [pathname]);
 
   return (
-    <nav className="m-auto w-[30rem]">
+    <nav className="m-auto w-96 sm:w-[30rem]">
       <div className="relative flex justify-between px-6 py-1">
         {routes.map((item) => (
           <div
@@ -55,7 +55,7 @@ export default function Menu() {
       <div
         ref={selectorRef}
         style={{ marginLeft: selectorLeft ?? 0, width: selectorWidth ?? 0 }}
-        className="h-1 w-14 bg-sakura-1 transition-all"
+        className="mt-1 h-1 w-14 bg-sakura-1 transition-all sm:mt-0"
       />
       <div className="h-px bg-sakura-1" />
     </nav>

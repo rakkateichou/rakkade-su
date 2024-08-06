@@ -1,7 +1,7 @@
 export default function Blog() {
   return (
-    <main>
-      <div className="slide-in-left px-72">
+    <main className="slide-in-left px-72 mt-10">
+      <div>
         <div>
         <div className="flex justify-between text-xl">
           <div>Exporting a Minecraft tree to Three.js</div>

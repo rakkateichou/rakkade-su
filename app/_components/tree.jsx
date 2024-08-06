@@ -24,16 +24,16 @@ function Scene() {
 
 export default function Tree() {
 
-  const [animClassName, setAnimClassName] = useState("");
+  const [classNameAnim, setClassNameAnim] = useState("");
 
   useProgress((state) => {
-    if (animClassName === "slide-in-right") return;
+    if (classNameAnim === "slide-in-right") return;
     if (state.loaded === 7) {
-      setAnimClassName("slide-in-right");
+      setClassNameAnim("slide-in-right");
     }
   })
   return (
-    <div className={`min-h-[80vh] w-[70vh] pt-8 opacity-0 ${animClassName}`}>
+    <div className={`min-h-[80vh] w-[70vh] pt-8 opacity-0 ${classNameAnim}`}>
       <Canvas shadows>
         <ambientLight intensity={1.15} />
         <PerspectiveCamera makeDefault position={[-25, 35, 60]} />
