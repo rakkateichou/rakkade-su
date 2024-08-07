@@ -2,23 +2,66 @@
 
 import { useState } from "react";
 
-type Category = { name: string; iconSrc: string };
+type Project = { name: string; imageSrc: string; link: string };
+type Category = { name: string; iconSrc: string; projects: Array<Project> };
 
 export default function Works() {
   const [snappedCategoryId, setSnappedCategoryId] = useState<number>(0);
 
+  const androidProjects: Array<Project> = [
+    {
+      name: "The Guardian Reader",
+      imageSrc: "/works/the-guardian-reader.png",
+      link: "/the-guardian-reader",
+    },
+    {
+      name: "MuEmmiter",
+      imageSrc: "/works/muemitter.png",
+      link: "/mu-emitter",
+    },
+  ];
+
+  const flutterProjects: Array<Project> = [
+    {
+      name: "Daily Planner",
+      imageSrc: "/works/daily-planner.png",
+      link: "/daily-planner",
+    },
+    {
+      name: "Music Matcher",
+      imageSrc: "/works/music-matcher.png",
+      link: "/music-matcher",
+    },
+  ];
+
+  const webProjects: Array<Project> = [
+    {
+      name: "This Website",
+      imageSrc: "/works/this-website.png",
+      link: "/this-website",
+    },
+  ];
+
+  const devOpsProjects: Array<Project> = [
+    {
+      name: "Jenkins CI/CD",
+      imageSrc: "/works/jenkins-ci-cd.png",
+      link: "/jenkins-ci-cd",
+    },
+  ];
+
   const categories: Array<Category> = [
-    { name: "Android", iconSrc: "/android.svg" },
-    { name: "Flutter", iconSrc: "/flutter.svg" },
-    { name: "Web", iconSrc: "/web.svg" },
-    { name: "DevOps", iconSrc: "/devops.svg" },
+    { name: "Android", iconSrc: "/android.svg", projects: androidProjects },
+    { name: "Flutter", iconSrc: "/flutter.svg", projects: flutterProjects },
+    { name: "Web", iconSrc: "/web.svg", projects: webProjects },
+    { name: "DevOps", iconSrc: "/devops.svg", projects: devOpsProjects },
   ];
 
   return (
     <main className="flex">
       <aside></aside>
       <div className="flex-grow">
-        <div className="slide-in-left sticky top-[68px] z-50 flex w-auto justify-center gap-8 bg-gray pt-3">
+        <div className="fade-in sticky top-[68px] z-50 flex w-auto justify-center gap-8 bg-gray pt-3">
           {categories.map((category, index) => {
             let classNameTint = "invert";
             if (index === snappedCategoryId) {
@@ -64,10 +107,14 @@ export default function Works() {
                 </div>
                 <div
                   id={category.name}
-                  className="no-scrollbar slide-in-right flex w-[89vw] snap-x snap-proximity snap-normal gap-4 overflow-x-scroll"
+                  className="no-scrollbar fade-in flex w-[89vw] snap-x snap-proximity snap-normal gap-4 overflow-x-scroll last:pr-6"
                 >
-                  <div className="h-[160px] min-w-[300px] snap-center bg-sakura-2"></div>
-                  <div className="mr-[70px] h-[160px] min-w-[300px] snap-center bg-sakura-1"></div>
+                  {category.projects.map((project) => (
+                    <img
+                      src={project.imageSrc}
+                      className="h-[160px] min-w-[300px] snap-center"
+                    ></img>
+                  ))}
                 </div>
               </div>
             );
