@@ -10,7 +10,7 @@ export default function Blog() {
   ];
 
   return (
-    <main className="fade-in mt-10 px-6 sm:mt-10 sm:px-72">
+    <main className="fade-in mt-10 px-6 sm:mt-10 sm:m-auto sm:max-w-[50rem]">
       {blogPosts.map((post) => (
         <div key={post.link}>
           <div className="flex justify-between text-nowrap text-xl">

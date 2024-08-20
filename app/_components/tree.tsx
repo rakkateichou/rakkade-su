@@ -31,7 +31,7 @@ export default function Tree() {
   });
   return (
     <div
-      className={`absolute right-5 top-96 h-[31vh] w-[40vw] pt-8 opacity-0 sm:static sm:max-h-[80vh] sm:min-h-[80vh] sm:w-[55vw] ${classNameAnim}`}
+      className={`flex-grow max-w-[10rem] sm:max-w-[35rem] ${classNameAnim}`}
     >
       <Canvas shadows>
         <ambientLight intensity={1.15} />

@@ -3,7 +3,7 @@ import Tree from "../_components/tree";
 
 export default function Home() {
   return (
-    <main className="mt-6 flex flex-row pl-6 sm:mt-10 sm:pl-36">
+    <main className="mt-6 flex items-center justify-center flex-row sm:mt-10 mx-auto ">
       <div className="slide-in-left max-w-[88vw] sm:max-w-[320px]">
         <div className="flex justify-between text-[42px] text-white">
           <b>Ruslan Veselov</b>
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-grow flex-col items-end justify-center sm:pr-10">
+      <div className="flex absolute justify-center top-[27rem] right-[2rem] h-[13rem] w-[10rem] sm:static sm:h-[30rem] sm:w-[30rem] ">
         <Tree />
       </div>
     </main>
