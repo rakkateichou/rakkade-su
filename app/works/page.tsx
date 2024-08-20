@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 type Project = { name: string; imageSrc: string; link: string };
@@ -95,9 +96,10 @@ export default function Works() {
             return (
               <div className="ml-3 flex sm:ml-[15vw]" key={category.name}>
                 <div className="slide-in-left -mt-1 flex w-11 flex-col items-center gap-3 bg-gray pl-2 pr-2 pt-1">
-                  <img
+                  <Image
                     src={category.iconSrc}
                     className={`h-8 w-8 ${classNameTint}`}
+                    alt={category.name}
                   />
                   <div
                     className={`rotate-180 text-lg [writing-mode:vertical-lr] ${classNameTextColor}`}
@@ -111,9 +113,10 @@ export default function Works() {
                 >
                   {category.projects.map((project) => (
                     <Link href={project.link} key={project.name}>
-                      <img
+                      <Image
                         src={project.imageSrc}
                         className="h-[160px] min-w-[300px]"
+                        alt={project.name}
                       />
                     </Link>
                   ))}

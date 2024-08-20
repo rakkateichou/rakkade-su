@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Tree from "../_components/tree";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,9 +10,10 @@ export default function Home() {
           <b>Ruslan Veselov</b>
         </div>
         <div className="group -mt-2 flex items-center gap-2 sm:mt-1">
-          <img
+          <Image
             src="/github.svg"
             className="h-[20px] w-[20px] opacity-60 transition-opacity group-hover:opacity-100"
+            alt="github"
           />
           <Link
             href="https://github.com/rakkateichou"
@@ -37,18 +39,19 @@ export default function Home() {
           </div>
           <div className="mt-3 flex flex-col justify-between gap-3 sm:mt-6 sm:flex-row sm:gap-0">
             <div className="flex flex-row items-center gap-2 sm:flex-col">
-              <img
+              <Image
                 src="/react.svg"
                 className="h-[48px] w-[48px] transition-transform hover:rotate-180"
+                alt="react"
               />
               <span className="text-xl sm:text-lg">Frontend</span>
             </div>
             <div className="flex flex-row items-center gap-2 sm:flex-col">
-              <img src="/data-science.svg" className="h-[48px] w-[48px]" />
+              <Image src="/data-science.svg" className="h-[48px] w-[48px]" alt="data science"/>
               <span className="text-xl sm:text-lg">Data science</span>
             </div>
             <div className="flex flex-row items-center gap-2 sm:flex-col">
-              <img src="/mobile.svg" className="h-[48px] w-[48px]" />
+              <Image src="/mobile.svg" className="h-[48px] w-[48px]" alt="mobile"/>
               <span className="text-xl sm:text-lg">Mobile dev</span>
             </div>
           </div>
@@ -59,9 +62,10 @@ export default function Home() {
           </div>
           <div className="mt-3 flex flex-col gap-3 sm:mt-5">
             <div className="flex items-center">
-              <img
+              <Image
                 src="/mail.svg"
                 className="h-[48px] w-[48px] sm:h-[32px] sm:w-[32px]"
+                alt="mail"
               />
               <a
                 href="mailto:me@rakkade.su"
@@ -71,9 +75,10 @@ export default function Home() {
               </a>
             </div>
             <div className="flex items-center">
-              <img
+              <Image
                 src="/telegram.svg"
                 className="h-[48px] w-[48px] sm:h-[32px] sm:w-[32px]"
+                alt="telegram"
               />
               <a
                 href="https://t.me/rakkatei"
@@ -83,9 +88,10 @@ export default function Home() {
               </a>
             </div>
             <div className="flex items-center">
-              <img
+              <Image
                 src="/linkedin.svg"
                 className="h-[48px] w-[48px] sm:h-[32px] sm:w-[32px]"
+                alt="linkedin"
               />
               <a
                 href="https://linkedin.com/in/ruslan-veselov/v"
