@@ -68,10 +68,10 @@ export default function Home() {
                 alt="mail"
               />
               <a
-                href="mailto:me@rakkade.su"
+                href="mailto:rv@rakkade.su"
                 className="ml-3 text-xl transition-colors hover:text-sakura-3"
               >
-                me@rakkade.su
+                rv@rakkade.su
               </a>
             </div>
             <div className="flex items-center">
