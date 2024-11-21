@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mt-6 flex items-center justify-center flex-row sm:mt-10 mx-auto ">
+    <main className="mx-auto mt-6 flex flex-row items-center justify-center sm:mt-10">
       <div className="slide-in-left max-w-[88vw] sm:max-w-[320px]">
         <div className="flex justify-between text-[42px] text-white">
           <b>Ruslan Veselov</b>
@@ -12,7 +12,9 @@ export default function Home() {
         <div className="group -mt-2 flex items-center gap-2 sm:mt-1">
           <Image
             src="/github.svg"
-            className="h-[20px] w-[20px] opacity-60 transition-opacity group-hover:opacity-100"
+            width={20}
+            height={20}
+            className="opacity-60 transition-opacity group-hover:opacity-100"
             alt="github"
           />
           <Link
@@ -41,17 +43,24 @@ export default function Home() {
             <div className="flex flex-row items-center gap-2 sm:flex-col">
               <Image
                 src="/react.svg"
-                className="h-[48px] w-[48px] transition-transform hover:rotate-180"
+                width={48}
+                height={48}
+                className="transition-transform hover:rotate-180"
                 alt="react"
               />
               <span className="text-xl sm:text-lg">Frontend</span>
             </div>
             <div className="flex flex-row items-center gap-2 sm:flex-col">
-              <Image src="/data-science.svg" className="h-[48px] w-[48px]" alt="data science"/>
+              <Image
+                src="/data-science.svg"
+                width={48}
+                height={48}
+                alt="data science"
+              />
               <span className="text-xl sm:text-lg">Data science</span>
             </div>
             <div className="flex flex-row items-center gap-2 sm:flex-col">
-              <Image src="/mobile.svg" className="h-[48px] w-[48px]" alt="mobile"/>
+              <Image src="/mobile.svg" width={48} height={48} alt="mobile" />
               <span className="text-xl sm:text-lg">Mobile dev</span>
             </div>
           </div>
@@ -64,7 +73,9 @@ export default function Home() {
             <div className="flex items-center">
               <Image
                 src="/mail.svg"
-                className="h-[48px] w-[48px] sm:h-[32px] sm:w-[32px]"
+                width={48}
+                height={48}
+                className="sm:h-[32px] sm:w-[32px]"
                 alt="mail"
               />
               <a
@@ -77,7 +88,9 @@ export default function Home() {
             <div className="flex items-center">
               <Image
                 src="/telegram.svg"
-                className="h-[48px] w-[48px] sm:h-[32px] sm:w-[32px]"
+                width={48}
+                height={48}
+                className="sm:h-[32px] sm:w-[32px]"
                 alt="telegram"
               />
               <a
@@ -90,7 +103,9 @@ export default function Home() {
             <div className="flex items-center">
               <Image
                 src="/linkedin.svg"
-                className="h-[48px] w-[48px] sm:h-[32px] sm:w-[32px]"
+                width={48}
+                height={48}
+                className="sm:h-[32px] sm:w-[32px]"
                 alt="linkedin"
               />
               <a
@@ -103,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex absolute justify-center top-[27rem] right-[2rem] h-[13rem] w-[10rem] sm:static sm:h-[30rem] sm:w-[30rem] ">
+      <div className="absolute right-[2rem] top-[27rem] flex h-[13rem] w-[10rem] justify-center sm:static sm:h-[30rem] sm:w-[30rem]">
         <Tree />
       </div>
     </main>
