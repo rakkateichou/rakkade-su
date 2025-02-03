@@ -11,7 +11,7 @@ export default function Home() {
         </div>
         <div className="group -mt-2 flex items-center gap-2 sm:mt-1">
           <Image
-            src="/github.svg"
+            src="/images/github.svg"
             width={20}
             height={20}
             className="opacity-60 transition-opacity group-hover:opacity-100"
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="mt-3 flex flex-col justify-between gap-3 sm:mt-6 sm:flex-row sm:gap-0">
             <div className="flex flex-row items-center gap-2 sm:flex-col">
               <Image
-                src="/react.svg"
+                src="/images/react.svg"
                 width={48}
                 height={48}
                 className="transition-transform hover:rotate-180"
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row items-center gap-2 sm:flex-col">
               <Image
-                src="/data-science.svg"
+                src="/images/data-science.svg"
                 width={48}
                 height={48}
                 alt="data science"
@@ -60,7 +60,7 @@ export default function Home() {
               <span className="text-xl sm:text-lg">Data science</span>
             </div>
             <div className="flex flex-row items-center gap-2 sm:flex-col">
-              <Image src="/mobile.svg" width={48} height={48} alt="mobile" />
+              <Image src="/images/mobile.svg" width={48} height={48} alt="mobile" />
               <span className="text-xl sm:text-lg">Mobile dev</span>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="mt-3 flex flex-col gap-3 sm:mt-5">
             <div className="flex items-center">
               <Image
-                src="/mail.svg"
+                src="/images/mail.svg"
                 width={48}
                 height={48}
                 className="sm:h-[32px] sm:w-[32px]"
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
             <div className="flex items-center">
               <Image
-                src="/telegram.svg"
+                src="/images/telegram.svg"
                 width={48}
                 height={48}
                 className="sm:h-[32px] sm:w-[32px]"
@@ -102,7 +102,7 @@ export default function Home() {
             </div>
             <div className="flex items-center">
               <Image
-                src="/linkedin.svg"
+                src="/images/linkedin.svg"
                 width={48}
                 height={48}
                 className="sm:h-[32px] sm:w-[32px]"
