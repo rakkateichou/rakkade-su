@@ -52,10 +52,10 @@ export default function Works() {
   ];
 
   const categories: Array<Category> = [
-    { name: "Android", iconSrc: "/android.svg", projects: androidProjects },
-    { name: "Flutter", iconSrc: "/flutter.svg", projects: flutterProjects },
-    { name: "Web", iconSrc: "/web.svg", projects: webProjects },
-    { name: "DevOps", iconSrc: "/devops.svg", projects: devOpsProjects },
+    { name: "Android", iconSrc: "/images/android.svg", projects: androidProjects },
+    { name: "Flutter", iconSrc: "/images/flutter.svg", projects: flutterProjects },
+    { name: "Web", iconSrc: "/images/web.svg", projects: webProjects },
+    { name: "DevOps", iconSrc: "/images/devops.svg", projects: devOpsProjects },
   ];
 
   return (
