@@ -16,7 +16,7 @@ export default function Menu() {
   const routes: Array<MyRoute> = [
     { name: "home", path: "/home", ref: useRef(null) },
     { name: "works", path: "/works", ref: useRef(null) },
-    { name: "blog", path: "/blog", ref: useRef(null) },
+    // { name: "blog", path: "/blog", ref: useRef(null) },
   ];
 
   const [currentRoute, setCurrentRoute] = useState(routes[0]);
