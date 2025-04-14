@@ -50,7 +50,7 @@ export default function Menu() {
 
   return (
     <nav className="m-auto w-96 sm:w-[30rem]">
-      <div className="relative flex justify-between px-6 py-1">
+      <div className="relative flex justify-around px-6 py-1">
         {routes.map((item) => (
           <div
             key={item.name}

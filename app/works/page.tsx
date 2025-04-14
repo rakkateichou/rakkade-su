@@ -98,6 +98,8 @@ export default function Works() {
                 <div className="slide-in-left -mt-1 flex w-11 flex-col items-center gap-3 bg-gray pl-2 pr-2 pt-1">
                   <Image
                     src={category.iconSrc}
+                    width={32}
+                    height={32}
                     className={`h-8 w-8 ${classNameTint}`}
                     alt={category.name}
                   />
@@ -115,6 +117,8 @@ export default function Works() {
                     <Link href={project.link} key={project.name}>
                       <Image
                         src={project.imageSrc}
+                        width={300}
+                        height={160}
                         className="h-[160px] min-w-[300px]"
                         alt={project.name}
                       />
