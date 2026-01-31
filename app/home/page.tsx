@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="mx-auto mt-6 flex flex-row items-center justify-center sm:mt-10">
+    <main className="mx-auto mt-6 flex flex-row items-center justify-center pb-8 sm:mt-10 sm:pb-8">
       <div className="slide-in-left max-w-[88vw] sm:max-w-[320px]">
         <div className="flex justify-between text-[42px] text-white">
           <b>Ruslan Veselov</b>
